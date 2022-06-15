@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+img{
+    display: block;
+}
+.warper{
+    background-image: url(./img/cover-image.jpg);
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 720px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.header .img_logo{
+    margin-top: 130px;
+    margin-left: 30%;
+}
+.header .content{
+    padding: 50px;
+}
+.content1{
+    color:white;
+    font-size: 25px;
+    max-width: 650px;
+    text-align: center;
+    line-height: 1.3cm;
+}
+.button{
+    margin-top: 30px;
+}
+.btn{
+    border-radius: 20px;
+    padding: 13px 60px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn_sign_up{
+    background: #e60a17;
+    color: white;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    margin-right: 40px;
+    margin-left: 150px;
+}
+.btn_sign_up:hover{
+    opacity: 0.9;
+}
+.btn_log_in{
+    background: white;
+    color: #e60a17;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+.btn_log_in:hover{
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+     img{
+        width: 150px;
+        height: 30px;
+     }
+    .content{
+        margin-top: 8px;
+    }
+    h1.content1{
+        font-size: 15px;
+        text-align: center;
+        line-height: 2;
+    }
+    .button{
+        margin-top: 0px;
+    }
+    .btn{
+        display: grid;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        width: 200px;
+        margin-left: 85px;
+    }
+    .btn_log_in{
+        background: white;
+        color: #e60a17;
+        text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+        box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+        margin-top: 20px;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    img{
+        margin-left: 35px;
+    }
+    .btn_sign_up{
+        margin-left: 170px;
+    }
+}
+
